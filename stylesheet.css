@@ -1,0 +1,17 @@
+.buttonControls {
+text-align: center;
+}
+
+#buttonGroup1,
+#buttonGroup2,
+#buttonGroup3{
+display: inline-flex; 
+flex-direction: column;
+}
+
+
+#buttonGroup1 button,
+#buttonGroup2 button,
+#buttonGroup3 button{
+margin-bottom: 5px;
+}
