@@ -9,6 +9,9 @@ display: inline-flex;
 flex-direction: column;
 }
 
+body {
+  background-color: lightblue;
+   }
 
 #buttonGroup1 button,
 #buttonGroup2 button,
