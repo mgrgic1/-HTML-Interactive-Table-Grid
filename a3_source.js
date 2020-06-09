@@ -73,3 +73,19 @@ function columnRemove(){
 
     }//end if
 }
+//forthecolors
+function fillAll()
+{
+	 let table = document.getElementById("boxes");
+
+
+}
+function fillUncolored()
+{
+   let table = document.getElementById("boxes");
+
+}
+function clearColors()
+{
+let table = document.getElementById("boxes");
+}
