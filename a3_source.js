@@ -55,10 +55,6 @@ function columnAdd(){
         columnCount++
     }
 }
-function selectColor
-{
-	 document.body.style.backgroundColor = "red";
-}
 function columnRemove(){
    
     let table = document.getElementById("boxes");
