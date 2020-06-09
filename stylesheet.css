@@ -18,3 +18,13 @@ body {
 #buttonGroup3 button{
 margin-bottom: 5px;
 }
+
+tr{
+  border: 5px solid #000000;
+}
+
+td{
+  border: 5px solid #000000;
+  height : 30pt;
+  width : 30pt;
+}
