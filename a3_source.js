@@ -55,7 +55,10 @@ function columnAdd(){
         columnCount++
     }
 }
-
+function selectColor
+{
+	 document.body.style.backgroundColor = "red";
+}
 function columnRemove(){
    
     let table = document.getElementById("boxes");
@@ -73,13 +76,20 @@ function columnRemove(){
 
     }//end if
 }
-//forthecolors
-function fillAll()
+function selectColor ()
 {
-	 let table = document.getElementById("boxes");
-
-
+	color = document.getElementbyID("selectMenu").value;
 }
+/*function fillAll()
+{
+let color = document.querySelectorAll('boxes');
+for(let column =0;i<color.length;column++)
+{
+	color[column].style.backgroundColor = '';
+}
+}
+*/
+/*
 function fillUncolored()
 {
    let table = document.getElementById("boxes");
@@ -89,3 +99,4 @@ function clearColors()
 {
 let table = document.getElementById("boxes");
 }
+*/
