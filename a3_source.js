@@ -54,6 +54,7 @@ function columnAdd(){
             rows[i].appendChild(document.createElement("td"));
         }
         columnCount++
+        row.onclick =function() {colorCell(row)}
     }
 }
 function columnRemove(){
@@ -76,7 +77,8 @@ function columnRemove(){
 function selectColor()
 {
 	
-	let color = document.getElementById("selectMenu").value;
+	let color = document.getElementById("selectMenu").value; 
+	consolelog(color);
 }
 /*function fillAll()
 {
