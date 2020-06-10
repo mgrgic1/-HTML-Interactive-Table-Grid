@@ -45,7 +45,7 @@ function columnAdd(){
         table.appendChild(row);
         rowCount++;
         columnCount++;
-        row.onclick = function() { colorCell(row);}
+       row.onclick = function() { colorCell(row);}
     }//end if
     else{
         //need to add a column child to each row to add a column to whole grid
