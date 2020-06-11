@@ -3,6 +3,7 @@
 //variables to keep track of row and column count
 let rowCount = 0;
 let columnCount = 0;
+let color;
 
 //Function to add row to table
 function rowAdd(){
@@ -11,6 +12,7 @@ function rowAdd(){
     let row = document.createElement("tr");
     if(rowCount == 0 && columnCount == 0){
         row.appendChild(document.createElement("td"));  //adds column child to row
+     row.onclick =function() {this.style.backgroundColor=color}
         table.appendChild(row);
         rowCount++;
         columnCount++;
@@ -18,6 +20,7 @@ function rowAdd(){
     else{
         for(let i=0; i<columnCount; i++){
             row.appendChild(document.createElement("td")); //adds proper amount of boxes to row before appending to table
+           row.onclick =function() {this.style.backgroundColor=color}
         }
         table.appendChild(row);
         rowCount++;
@@ -42,19 +45,21 @@ function columnAdd(){
     if(rowCount == 0 && columnCount == 0){
         let row = document.createElement("tr");
         row.appendChild(document.createElement("td"));  
+            row.onclick =function() {this.style.backgroundColor=color}
         table.appendChild(row);
         rowCount++;
         columnCount++;
-       row.onclick = function() { colorCell(row);}
+       
     }//end if
     else{
         //need to add a column child to each row to add a column to whole grid
         let rows = document.getElementsByTagName("tr"); //array of row elements
         for(let i=0; i<rowCount; i++){
-            rows[i].appendChild(document.createElement("td"));
+          rows[i].appendChild(document.createElement("td"));
+          rows.onclick =function() {this.style.backgroundColor=color}
         }
         columnCount++
-        row.onclick =function() {colorCell(row)}
+    
     }
 }
 function columnRemove(){
@@ -77,8 +82,8 @@ function columnRemove(){
 function selectColor()
 {
 	
-	let color = document.getElementById("selectMenu").value; 
-	consolelog(color);
+	color = document.getElementById("selectMenu").value; 
+	
 }
 /*function fillAll()
 {
