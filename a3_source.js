@@ -11,16 +11,19 @@ function rowAdd(){
     let table = document.getElementById("boxes");
     let row = document.createElement("tr");
     if(rowCount == 0 && columnCount == 0){
-        row.appendChild(document.createElement("td"));  //adds column child to row
-     row.onclick =function() {this.style.backgroundColor=color}
+        let column = document.createElement("td");
+        column.onclick = function() {this.style.backgroundColor=color}
+        row.appendChild(column);  //adds column child to row
         table.appendChild(row);
         rowCount++;
         columnCount++;
     }//end if
     else{
         for(let i=0; i<columnCount; i++){
-            row.appendChild(document.createElement("td")); //adds proper amount of boxes to row before appending to table
-           row.onclick =function() {this.style.backgroundColor=color}
+            let column = document.createElement("td");
+            column.onclick =function() {this.style.backgroundColor=color}
+            row.appendChild(column); //adds proper amount of boxes to row before appending to table
+            
         }
         table.appendChild(row);
         rowCount++;
@@ -44,19 +47,20 @@ function columnAdd(){
     let table = document.getElementById("boxes");
     if(rowCount == 0 && columnCount == 0){
         let row = document.createElement("tr");
-        row.appendChild(document.createElement("td"));  
-            row.onclick =function() {this.style.backgroundColor=color}
+        let column = document.createElement("td");
+        column.onclick =function() {this.style.backgroundColor=color}
+        row.appendChild(column)
         table.appendChild(row);
         rowCount++;
         columnCount++;
-       
     }//end if
     else{
         //need to add a column child to each row to add a column to whole grid
         let rows = document.getElementsByTagName("tr"); //array of row elements
         for(let i=0; i<rowCount; i++){
-          rows[i].appendChild(document.createElement("td"));
-          rows.onclick =function() {this.style.backgroundColor=color}
+            let column = document.createElement("td");
+            column.onclick =function() {this.style.backgroundColor=color}
+            rows[i].appendChild(column);
         }
         columnCount++
     
