@@ -118,15 +118,17 @@ var tableTd = document.getElementById("boxes").getElementsByTagName("td");
 	}
 }
 
-/*function fillAll()
+//loops through table going through each element and changes background colour
+function fillAll()
 {
-let color = document.querySelectorAll('boxes');
-for(let column =0;i<color.length;column++)
+ var tabelt =document.getElementById("boxes").getElementsByTagName("td");
+for(var i =0; i<tabelt.length;i++)
 {
-	color[column].style.backgroundColor = '';
+	tablet[i].style.backgroundColor = color;
+    
 }
 }
-*/
+
 /*
 function fillUncolored()
 {
