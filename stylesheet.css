@@ -1,6 +1,5 @@
 .buttonControls {
 text-align: center;
-  background-color: lightblue;
 }
 
 #buttonGroup1,
@@ -10,7 +9,9 @@ display: inline-flex;
 flex-direction: column;
 }
 
-
+body {
+  background-color: lightblue;
+}
 
  
 
