@@ -121,8 +121,8 @@ var tableTd = document.getElementById("boxes").getElementsByTagName("td");
 //loops through table going through each element and changes background colour
 function fillAll()
 {
- var tabelt =document.getElementById("boxes").getElementsByTagName("td");
-for(var i =0; i<tabelt.length;i++)
+ var tablet =document.getElementById("boxes").getElementsByTagName("td");
+for(var i =0; i<tablet.length;i++)
 {
 	tablet[i].style.backgroundColor = color;
     
