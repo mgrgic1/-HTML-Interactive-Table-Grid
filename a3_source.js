@@ -129,10 +129,16 @@ for(var i =0; i<tablet.length;i++)
 }
 }
 
-/*
 function fillUncolored()
 {
-   let table = document.getElementById("boxes");
+var cells =document.getElementById("boxes").getElementsByTagName("td");
+for(var i =0; i<cells.length;i++)
+{
+	if(cells[i].style.backgroundColor=="white")
+	{
+		cells[i].style.backgroundColor=color;
+	}
+	
+}
 
 }
-*/
